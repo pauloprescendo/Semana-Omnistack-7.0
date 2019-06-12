@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 
-const server = require('http').server(app);
+const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
 mongoose.connect('mongodb+srv://dbUser:dbUser@cluster0-epyzo.mongodb.net/test?retryWrites=true&w=majority',{
