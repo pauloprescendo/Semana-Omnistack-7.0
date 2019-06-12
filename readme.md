@@ -1,0 +1,1 @@
+API de estudos baseado no Instagram, tendo base de estudos a Semana OmniStack 7.0
