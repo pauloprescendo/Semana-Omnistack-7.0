@@ -33,7 +33,7 @@ export default class Feed extends Component {
   }
 
   registerToSocket = () => {
-    const socket = io('http://10.0.3.2:3333');
+    const socket = io('http://10.0.2.2:3333');
 
     socket.on("post", newPost => {
       this.setState({ feed: [newPost, ...this.state.feed] });
@@ -68,7 +68,7 @@ export default class Feed extends Component {
 
                 <Image source={more}/>
               </View>
-              <Image style={styles.feedImage} source={{ uri: `http://10.0.3.2:3333/files/${item.image}` }} />
+              <Image style={styles.feedImage} source={{ uri: `http://10.0.2.2:3333/files/${item.image}` }} />
 
               <View style={styles.feedItemFooter}>
                 <View style={styles.actions}>
